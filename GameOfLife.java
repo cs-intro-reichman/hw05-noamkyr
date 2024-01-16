@@ -180,9 +180,8 @@ public class GameOfLife {
 			for (int j = 1; j < arr[i].length - 1; j++) {
 				System.out.printf("%,d  ", arr[i][j]);
 			}
-			if (i != arr.length -1){
-				System.out.printf("\n");
-			}
+			System.out.printf("\n");
+
 		}
 	}
 		
