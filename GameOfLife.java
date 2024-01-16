@@ -8,9 +8,9 @@
 public class GameOfLife {
 
 	public static void main(String[] args) {
-		//String fileName = args[0];
+		String fileName = args[0];
 
-		String fileName = "line.dat";
+		//String fileName = "line.dat";
 
 
 
