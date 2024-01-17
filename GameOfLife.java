@@ -25,8 +25,7 @@ public class GameOfLife {
 	// Reads the data file and prints the initial board.
 	public static void test1(String fileName) {
 		int[][] board = read(fileName);
-		//print(board);
-		System.out.printf("bla bla");
+		print(board);
 
 	}
 		
@@ -186,7 +185,6 @@ public class GameOfLife {
 			System.out.printf("\n");
 		}
 		System.out.printf("\n");
-
 	}
 		
     // Displays the board. Living and dead cells are represented by black and white squares, respectively.
