@@ -25,7 +25,9 @@ public class GameOfLife {
 	// Reads the data file and prints the initial board.
 	public static void test1(String fileName) {
 		int[][] board = read(fileName);
-		print(board);
+		//print(board);
+		System.out.printf("bla bla");
+
 	}
 		
 	// Reads the data file, and runs a test that checks 
@@ -176,6 +178,7 @@ public class GameOfLife {
 	
 	// Prints the board. Alive and dead cells are printed as 1 and 0, respectively.
     public static void print(int[][] arr) {
+		//System.out.printf("\n");
 		for (int i = 1; i < arr.length - 1; i++) {
 			for (int j = 1; j < arr[i].length - 1; j++) {
 				System.out.printf("%3d", arr[i][j]);
