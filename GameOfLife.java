@@ -177,7 +177,8 @@ public class GameOfLife {
 			System.out.printf("\n");
 		}
 		System.out.printf("\n");
-		
+		System.out.printf("\n");
+
 	}
 		
     // Displays the board. Living and dead cells are represented by black and white squares, respectively.
