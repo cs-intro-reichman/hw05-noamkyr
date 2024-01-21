@@ -176,8 +176,8 @@ public class GameOfLife {
 			}
 			System.out.printf("\n");
 		}
-		System.out.printf("\n");
-		System.out.printf("\n");
+//		System.out.printf("\n");
+//		System.out.printf("\n");
 
 	}
 		
