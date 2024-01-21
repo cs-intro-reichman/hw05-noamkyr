@@ -10,7 +10,7 @@ public class GameOfLife {
 	public static void main(String[] args) {
 		String fileName = args[0];
 
-		//String fileName = "line.dat";
+		//String fileName = "square.dat";
 
 
 
@@ -80,41 +80,33 @@ public class GameOfLife {
 		int cols = Integer.parseInt(in.readLine());
 		int[][] board = new int[rows + 2][cols + 2];
 		//// Replace the following statement with your code.
+
+		String s = in.readLine();
+
 		char curr = 'a';
 		int curr_row = 1;
 		int curr_col = 1;
 
-		boolean r_n = true;
-		while (r_n){
-			curr = in.readChar();
-			if (curr == '\r'){
-				curr = in.readChar();
-				if (curr == '\n'){
-					curr_row ++;
-				}
-			} else {
-				r_n = false;
+
+		while (s != null && (!in.isEmpty() || !s.equals("")) ){
+
+			while (s.equals("")){
+				curr_row++;
+				s = in.readLine();
 			}
-		}
-
-		while (!in.isEmpty()){
-
-			while (curr != '\n' && curr != '\r'){
-				while (curr == '.'){
-					curr_col ++;
-					curr = in.readChar();
-				}
-
-				if (curr == 'x'){
+			for (int i = 0; i < s.length() ; i++) {
+				if (s.charAt(i) == 'x'){
 					board[curr_row][curr_col] = 1;
 				}
-				curr = in.readChar();
+
 				curr_col++;
 			}
-			char temp = in.readChar();
-			curr_row ++;
+
 			curr_col = 1;
-			curr = in.readChar();
+			curr_row ++;
+
+			s = in.readLine();
+
 		}
 
 		return board;
@@ -180,7 +172,7 @@ public class GameOfLife {
 		//System.out.printf("\n");
 		for (int i = 1; i < arr.length - 1; i++) {
 			for (int j = 1; j < arr[i].length - 1; j++) {
-				System.out.printf("%3d", arr[i][j]);
+				System.out.printf("%3s", arr[i][j]);
 			}
 			System.out.printf("\n");
 		}
